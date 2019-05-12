@@ -71,7 +71,7 @@ public class GetWebService {
 	@GET
 	@Path("/preference")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Preference> getPPreferences() {
+	public List<Preference> getPreferences() {
 		return dao.getPreferences();
 	}	
 }
