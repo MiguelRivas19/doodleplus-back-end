@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [13/May/2019:00:15:14 +0200] "GET /rest/select/preference HTTP/1.1" 200 301 http-bio-8080-exec-1 3439
+0:0:0:0:0:0:0:1 - - [13/May/2019:00:15:23 +0200] "GET /rest/select/allergie HTTP/1.1" 200 280 http-bio-8080-exec-2 669
