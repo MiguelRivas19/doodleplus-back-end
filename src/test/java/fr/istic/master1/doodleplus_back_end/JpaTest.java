@@ -149,18 +149,18 @@ public class JpaTest {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("mysql");
 		EntityManager manager = factory.createEntityManager();
 		JpaTest test = new JpaTest(manager);
-		
+		/*
 		EntityTransaction tx = manager.getTransaction();
 		tx.begin();
 		try {
 			test.createParticipants();
-			//test.updateParticipants();
+			test.updateParticipants();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		tx.commit();
-		
-		test.listCreateurs();
+		*/
+		//test.listCreateurs();
 		test.listSondages();
 		test.listParticipants();
 		

@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
 
 @Entity
 public class Createur {
@@ -76,7 +77,8 @@ public class Createur {
 
 	@Override
 	public String toString() {
-		return "Createur [id=" + id + "]";
+		return "Createur [id=" + id + ", prenom=" + prenom
+				+ ", nom=" + nom + ", email=" + email + "]";
 	}
 
 }
