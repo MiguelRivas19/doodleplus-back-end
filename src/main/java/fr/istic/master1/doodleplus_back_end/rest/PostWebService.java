@@ -9,6 +9,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import fr.istic.master1.doodleplus_back_end.Createur;
+import fr.istic.master1.doodleplus_back_end.aux.HeureAux;
+import fr.istic.master1.doodleplus_back_end.aux.ReunionAux;
 import fr.istic.master1.doodleplus_back_end.dao.DataAccess;
 
 @Path("/update")
@@ -32,9 +34,10 @@ public class PostWebService {
 	
 
 	@POST
-	@Path("/sondage")
-	public void setSondage() {
-		dao.setSondage(null, null);
+	@Path("/reunion")
+	public void setSondage(ReunionAux reunion) {
+		System.out.println(reunion.toString());
+		//dao.setSondage(null, null);
 	}
 	
 }
